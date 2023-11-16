@@ -3,14 +3,9 @@ import "./ResponsiveComponent.css";
 import SanjayData from "./sanjaydata.jpeg";
 import Sanjayworks from "./sanjayworks.jpeg";
 import sanjayvid from "./sanjayvid.mp4";
+
 const ResponsiveComponent = () => (
   <div className="responsive-container">
-    <div className="image-container">
-      <img src={SanjayData} alt="Image 1" className="responsive-image" />
-    </div>
-    <div className="image-container">
-      <img src={Sanjayworks} alt="Image 2" className="responsive-image" />
-    </div>
     <div className="video-container">
       <iframe
         title="Video"
@@ -20,6 +15,12 @@ const ResponsiveComponent = () => (
         allowFullScreen
         style={{ border: "none" }} // Use inline style to remove border
       ></iframe>
+    </div>
+    <div className="image-container">
+      <img src={Sanjayworks} alt="Image 2" className="responsive-image" />
+    </div>
+    <div className="image-container">
+      <img src={SanjayData} alt="Image 1" className="responsive-image" />
     </div>
   </div>
 );
